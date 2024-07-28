@@ -6,8 +6,9 @@
 trigger:
 - main
 
-pool: Mycomputeragent
-  #vmImage: ubuntu-latest
+pool: 
+  name: Mycomputeragent
+  # vmImage: ubuntu-latest
 
 steps:
 - script: echo Hello, world!
@@ -23,4 +24,5 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
 
